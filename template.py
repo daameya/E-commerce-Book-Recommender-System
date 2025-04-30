@@ -28,6 +28,7 @@ list_of_files = [
     f"src/{project_name}/logger/__init__.py",
     f"src/{project_name}/logger/log.py",
     f"src/{project_name}/constant/__init__.py",
+    "config/config.yaml",
     ".dockerignore",
     "app.py",
     "Dockerfile",
