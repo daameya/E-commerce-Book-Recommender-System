@@ -1,4 +1,4 @@
-from books_recommender.pipeline.training_pipeline import TrainingPipeline
+from src.books_recommender.pipeline.training_pipeline import TrainingPipeline
 
 
 obj = TrainingPipeline()

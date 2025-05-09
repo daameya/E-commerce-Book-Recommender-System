@@ -2,9 +2,9 @@ import os
 import sys
 import pickle
 import pandas as pd
-from books_recommender.logger.log import logging
-from books_recommender.config.configuration import AppConfiguration
-from books_recommender.exception.exception_handler import AppException
+from src.books_recommender.logger.log import logging
+from src.books_recommender.config.configuration import AppConfiguration
+from src.books_recommender.exception.exception_handler import AppException
 
 
 

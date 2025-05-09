@@ -3,10 +3,10 @@ import sys
 import pickle
 import streamlit as st
 import numpy as np
-from books_recommender.logger.log import logging
-from books_recommender.config.configuration import AppConfiguration
-from books_recommender.pipeline.training_pipeline import TrainingPipeline
-from books_recommender.exception.exception_handler import AppException
+from src.books_recommender.logger.log import logging
+from src.books_recommender.config.configuration import AppConfiguration
+from src.books_recommender.pipeline.training_pipeline import TrainingPipeline
+from src.books_recommender.exception.exception_handler import AppException
 
 
 class Recommendation:

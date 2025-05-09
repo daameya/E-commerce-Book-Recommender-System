@@ -2,9 +2,9 @@ import os
 import sys
 from six.moves import urllib
 import zipfile
-from books_recommender.logger.log import logging
-from books_recommender.exception.exception_handler import AppException
-from books_recommender.config.configuration import AppConfiguration
+from src.books_recommender.logger.log import logging
+from src.books_recommender.exception.exception_handler import AppException
+from src.books_recommender.config.configuration import AppConfiguration
 
 class DataIngestion:
 
