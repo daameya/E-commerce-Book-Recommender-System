@@ -35,11 +35,11 @@ https://github.com/daameya/E-commerce-Book-Recommender-System.git
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-python -m venv books
+conda create -n books python=3.7.10 -y
 ```
 
 ```bash
-books\scripts\activate
+conda activate books
 ```
 
 

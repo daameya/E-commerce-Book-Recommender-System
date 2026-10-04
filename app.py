@@ -3,10 +3,10 @@ import sys
 import pickle
 import streamlit as st
 import numpy as np
-from src.books_recommender.logger.log import logging
-from src.books_recommender.config.configuration import AppConfiguration
-from src.books_recommender.pipeline.training_pipeline import TrainingPipeline
-from src.books_recommender.exception.exception_handler import AppException
+from books_recommender.logger.log import logging
+from books_recommender.config.configuration import AppConfiguration
+from books_recommender.pipeline.training_pipeline import TrainingPipeline
+from books_recommender.exception.exception_handler import AppException
 
 
 class Recommendation:
@@ -99,9 +99,16 @@ class Recommendation:
 
 
 if __name__ == "__main__":
-    st.header('ML Based Books Recommender System')
+    st.set_page_config( page_title="BookVerse | Book Recommender", page_icon="📚", layout="wide" )
+    st.header('BookVerse | ML Based Books Recommender System')
     st.text("This is a collaborative filtering based recommendation system!")
-
+    st.markdown(
+    """
+    ### Discover your next great read
+    Select a book you enjoy and we'll recommend
+    **5 similar books** using collaborative filtering.
+    """
+    )
     obj = Recommendation()
 
     #Training
@@ -114,5 +121,7 @@ if __name__ == "__main__":
         book_names)
     
     #recommendation
+    st.subheader("📖 You might also like")
+
     if st.button('Show Recommendation'):
         obj.recommendations_engine(selected_books)
